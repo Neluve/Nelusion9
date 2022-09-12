@@ -1,11 +1,11 @@
 CACHE MANIFEST 
 
- 
 index.html
 intro.html
 fusions9.html
 fusions9ul.html
 creditos.html
+app2usb.bin
 goldhen.bin
 backupdb.bin
 trukis.bin
@@ -78,7 +78,6 @@ syscalls2.js
 ToDex.bin
 binloader.html
 binloader.js
-binloader.bin
 web.html
 webkit.js
 WebRTE.bin
