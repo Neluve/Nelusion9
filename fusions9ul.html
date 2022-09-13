@@ -5,74 +5,16 @@
 margin:auto;
 font-family:juma;
 font-size:20px;
-font-weight:lighter;
-text-align:left;
-color:#FFFFFF;
 background-size:cover;	
 }
-
 		@font-face{
 			font-family: juma;
 			src: url('juma.ttf');
-		
 }
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
- .title {
-  font-size:40px;
-  margin:0;
-  font-family: juma;
-  padding:0;
-  box-sizing:border-box;
-  font-weight:bolder;
-  margin-bottom:10px;
- }
 		@font-face{
 			font-family: juma2;
 			src: url('juma2.ttf');
  }
-/* Modal Content */
-.modal-content {
-  font-family: juma;
-  font-size: 18px;
-  position: relative;
-  background-color: #dddddd;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
-button {
-            background:rgba(0,0,0,0.5);
-			box-shadow: 0 5px 20px 0 white;
-            border: 2px solid black;
-            border-radius: 10px;
-            width: 173px;
-            height: 40px;            
-            text-align: center;
-}
-button:hover {
-            box-shadow: 0 5px 50px 0 white;
-            color: white;
-            border-radius: 10px;
-			background-color: #0F0F53;
-}
 
 #progress {
  font-weight:bold;
@@ -81,20 +23,16 @@ button:hover {
  font-size:17px;
 }
 .pointer {cursor: pointer;}
-
-
     </style>
 <style>
-
-
 #gradienttext1 {
   line-height: 100%;
   padding-bottom: 0%;
   padding-top: 0%;
   padding-left: 0%;
   font-size: 20px;
-font-family: juma;
   text-align: center;
+font-family: juma;
   background: linear-gradient(
     to right, 
     #4D0099, #1691FF, #A3C5F8, #0AB6FF, #10A5CE, #0F0096, #4B027C, #4D0099);
@@ -105,17 +43,54 @@ font-family: juma;
   background-position: center 0%;
   animation: background-slide 50s infinite linear;
 }
-h1 {
-  font-size: calc(20px + 18vh);
+			@import url('juma.ttf');
+			#gradienttext1 {font-family: 'juma';}
+			</style>			
+			<style>#jumi2 {
+  font-size: calc(25px + 18vh);
   line-height: calc(20px + 20vh);
-/*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
-  color: #fccaff; */
-  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-    color: #fff6a9;
+/*   text-shadow: 0 0 5px #47D1FF, 0 0 10px #000000, 0 0 0px #47D1FF,
+    0 0 10px #000000, 0 0 10px #000000, 0 0 20px #000000, 0 0 0px #000000;
+  color: #89FFC5; */
+  text-shadow: 0 0 5px #FFF6A9, 0 0 15px #FFF6A9, 0 0 10px #FFF6A9, 0 0 10px #FFF6A9, 0 0 20px #ff0000, 0 0 10px #AA5E00, 0 0 98px #ff0000;
+    color: #EE6B55;
   font-family: "juma", cursive;
   text-align: center;
-  animation: blink 12s infinite;
+  animation: blink 2s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+@-webkit-keyframes blink {
+  0%,
+  19%,
+  21%,
+  23% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  19%,
+  21% {
+/*     color: #89FFC5;
+    text-shadow: 0 0 5px #47D1FF, 0 0 15px #47D1FF, 0 0 25px #47D1FF,
+      0 0 20px #47D1FF, 0 0 30px #47D1FF, 0 0 40px #47D1FF, 0 0 40px #47D1FF; */
+  text-shadow: 0 0 5px #FFA500, 0 0 15px #FFA500, 0 0 10px #FFA500, 0 0 20px #FFA500, 0 0 30px #ff0000, 0 0 10px #ff8d00, 0 0 38px #ff0000;
+    color: #FFA500;
+  }
+}
+			</style>			
+			<style>#jumi {
+  font-size: calc(25px + 18vh);
+  line-height: calc(20px + 20vh);
+  text-shadow: 0 0 5px #47D1FF, 0 0 3px #47D1FF, 0 0 0px #47D1FF, 0 0 3px #47D1FF, 0 0 0px #ff0000, 0 0 3px #ff8d00, 0 0 0px #ff0000;
+    color: #FFA500;
+  font-family: "juma", cursive;
+  text-align: center;
+  animation: blink 2s infinite;
   -webkit-animation: blink 12s infinite;
 }
 
@@ -135,42 +110,31 @@ h1 {
   54%,
   56%,
   100% {
-/*     color: #fccaff;
-    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-    color: #fff6a9;
+/*     color: #89FFC5;
+    text-shadow: 0 0 5px #47D1FF, 0 0 10px #47D1FF, 0 0 25px #47D1FF,
+      0 0 20px #47D1FF, 0 0 30px #47D1FF, 0 0 40px #47D1FF, 0 0 40px #47D1FF; */
+  text-shadow: 0 0 5px #47D1FF, 0 0 15px #47D1FF, 0 0 20px #47D1FF, 0 0 40px #47D1FF, 0 0 40px #ff0000, 0 0 10px #ff8d00, 0 0 38px #ff0000;
+    color: #FFA500;
   }
 }
 
 @keyframes blink {
   20%,
   24%,
+  54%,
   55% {
     color: #111;
     text-shadow: none;
   }
 
-  0%,
-  19%,
-  21%,
   23%,
   25%,
   54%,
-  56%,
-  100% {
-/*     color: #fccaff;
-    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-    color: #fff6a9;
+  56% {
+    color: #47D1FF;
   }
 }
-			</style>
-			<style>
-			@import url('juma.ttf');
-			#gradienttext1 {font-family: 'juma';}
-			</style>
+</style>
 			
 <meta charset="utf-8">
 <title>AutoExploit GoldHen JMC PS4 900</title>
@@ -209,7 +173,7 @@ function SendPayload() {
 
 function jbdone() {
 progress.innerHTML="<font color=#47D1FF>Kargando <font color=#ffb452>Gold<font color=#67caef>Hen";
-LoadedMSG="<font color=#47D1FF>Kargado!";
+LoadedMSG="<font color=#89FFC5>Kargado!";
 goldhen();
 }
 
@@ -219,24 +183,22 @@ window.progress.innerHTML= LoadedMSG
 
 function goldhen(){
     progress.innerHTML="<font color=#47D1FF>Kargando <font color=#ffb452>Gold<font color=#67caef>Hen";
-    LoadedMSG="<font color=#ffb452>Gold<font color=#67caef>Hen <font color=#47D1FF>|| <font color=#89FFC5>Kargado! <img src='data:image/png;base64,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' />";
+    LoadedMSG="<font color=#ffb452>Gold<font color=#67caef>Hen <font color=#47D1FF>|| <font color=#89FFC5>Kargado!";
     PLfile = "goldhen.bin";
     setTimeout(loadBIN,1000);
 }
 </script>
 </head>
 <body onload="poc()">
-
-<h1 style='text-shadow: 4px 4px 4px black;font-size:30px;text-align:center;text-shadow: 4px 4px 4px black;color:#a1c3ff;margin-top:-1%;'>.: AutoExploit GoldHen JMC™:.</h1>
-
-
-<br><br><br><br><br><br><br><br><br>
-<h2 id=progress style='font-family: "juma2";font-size:44px;text-align:center;text-shadow: 4px 4px 4px black;color:#fbccfb;margin-top:-3%;'>Proccesando<font color=#62e1f2> HackS....<font color=#f9979c>Un<font color=#9affd1> Momento...</h2>
+<div style="text-align:center;" >
+<a id=jumi style='font-size:37px;color:#47D1FF;'>.: AutoExploit </a><a id=jumi2 style='font-size:37px;'>GoldHen JMC™:.</a>
+<br><br><br><br><br><br>
+<h2 id=progress style='font-family: "juma2";font-size:44px;text-align:center;text-shadow: 4px 4px 4px black;color:#fbccfb;onmouseout="progress.innerHTML=' '" >Procesando<font color=#62e1f2> HackS....<font color=#f9979c>Un<font color=#9affd1> Momento...</h2>
 <div class="content" style="text-align:center;" >
-<br><br><br><br><br><br><br><a id="button-Payload" onMouseOver="progress.innerHTML='<font color=#e9d4a2>Klic <font color=#BEE06E>Aki <font color=#4ACDFF>para <font color=#FFFF25>Volver <font color=#4ACDFF>al <font color=#FF54B2>Menu <font color=#00F2FF>Principal'"; onmouseout="progress.innerHTML=' '" type=button href="intro.html"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAAdCAYAAADo6f0XAAAACXBIWXMAAAsSAAALEgHS3X78AAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAU6SURBVHja7Ju9ahtNFIZ1C1vvxnbWxEZJcGLvLcwtqAgYDCkUcJMmMGnUuLGKFGpSbOHGRcAiEDAYY44uQaXkCLEbIxEwhLDG5ALma3ZhGZ2ZnbM/YvVZxdNo5zxz5s3bJJCGEKKxZs3/kcwD9mDO7MG8bw/mkT2YC0PAHswbEpY9mHN7MA8JntAezH17MHcRn8o/JPij2M8M/Amrkgc1iwRm4KXk219GvqRy2zCzbJiBDTORA7Bh1kjh2TCLcroSuOQs2+9r/KuUh2XDbFjAyzJy4HXMl1bumzuwb+5ETsC+uWvEuPbNXVTAlaad8iZYJfp9xJ+wKnlAQSfTZNCwb+54AXe3qnyNy+1ch23nOhQFAOc6bMT4BV1pIuc6tFLusv3CuQ49yb9KeXglOBny/jS8jvmal/sq6DtXgZAYOlcBN6TtXAWNmEjyRPF3lkHLuQoA2SPtxvwi3t9kzxCZ7Ur+VcqDF8giwUXen8Y12DXBX1a+5uW+nEbO5VSkGOr+0ulcTlUwySOcy2lLcx4jlOZ56puH+LsEt4X4ATm3kAfxDcvKgyN+K+euZQFV50v615JnPyZCguvK/ezHRAVDXA0iIO+S4WcF/YCcEZodKFSdRxvxh/GMjn7ssTLuduNzJiR/DrzqfGnl/v5TSOjL/f2nCoa4GgQ8bJcMPyPeAdI8IGd0O1CoOg8X+U4hiu/A7uZEF1fMlZ4vqdwbF7dCQlvujYtbFQxxJd/AAIHgZfiZZh8M+R5AzizkQbxjWXk0Ni5uu4pzpkQlOZOMeNX5ksq9+W0sJLTl3vw2VsEQV/JN5AAM/EyzDwZk3IHmQbxjWXkk+Dl9mJfldCQZ8arzpZX7fCQk9OU+H6lgiCv5JohEm+cj18DPNPtggDQPyJmFPIh3LCsP+a5u/J4sML8Xe/rIt9DA2Y7nedX5ksq9dTYSEtpyb52NVDDElXwTBGDrbOQZ+plmHwxA7pLPLORBvGNZeeSFa94YSb/3C7pLz5dU7uf+SEhoy/3cH6lgiCv5xg3xiH6mOY8B0jwgZxbyIN6xrDyKoHpj0Xx51fmSyu1+HQsJbbndr2MVDHG1NOepYP4u0QHSPCBnFvIocd8y8ygzR654e7tu+ZLKvd0bCwltubd7Yx2yK9rujfl2b8wysDK8Kr/Y7o39+A4dLJ4HaRYM7uCGuy07D9fg3TLdeAd5rySfENm3a7Bva7s37htmVyhfUrlffLkVEtpyv/hyq8NHfCawDG9RP4/nQfodkDtUs3moMg+W0y0Tppy8JGeCW3a+pHLvnE6EhLbcO6cTHe7O6SRCnFmwDG9RP4/nQfodkDtUs3moMg+Ww4vRSjmtndPJsCRvV7F3oXxJ5d49mQoJbbl3T6ZZeLsn0wjx6mAG3rQ/JPp5PAvS74D4VbN5qSoPRnTKRLsn0zbitXZPpsOCbl+zd6F8SeVudgIhoS13sxOYYDU7AW92giHix2CGXtkPhn4ez8nnAXGrZotQRR7M0CUzbHaCbrMTuBn+NiHfhH6zE7QyvIXyzf3fzEx4+fnXKgMvP/8SKWDF3/PkqLTcrz7NVhl49WkmUsCKv+fJUWm5X3/8vcoMX3/8LVLAir/nyVFpufeO7+uIt3d8zzLo7x3fCwm/pu9Zo6DScr/58KeOwJsPf0QOWjV9zxoFlZb77fu/dQTevv8riEBN37JGQ6Xl3j96qCOwf/QgCAz3jx6smr5ljYZKy31w+FhH4ODwURgQHhw+8oPDR6um71iTQaXl9t79qyOe9+4fy8Ct6e5rCKh6+d8AP1oWMD0g9y4AAAAASUVORK5CYII="/></a>
-<br><br>
-<span id="gradienttext1" href="creditos.html">.●☆●._.- JMC JuanMa™-._.●☆●.</span>
-</div>
+<br><br><br><br><br><br><br><a id="button-Payload" onMouseOver="progress.innerHTML='<font color=#e9d4a2>Klic <font color=#BEE06E>Aki <font color=#4ACDFF>para <font color=#FFFF25>Volver <font color=#4ACDFF>al <font color=#FF54B2>Menu <font color=#00F2FF>Principal'"; onmouseout="progress.innerHTML=' '" type=button href="intro.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAAdCAYAAADo6f0XAAAACXBIWXMAAAsSAAALEgHS3X78AAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAU6SURBVHja7Ju9ahtNFIZ1C1vvxnbWxEZJcGLvLcwtqAgYDCkUcJMmMGnUuLGKFGpSbOHGRcAiEDAYY44uQaXkCLEbIxEwhLDG5ALma3ZhGZ2ZnbM/YvVZxdNo5zxz5s3bJJCGEKKxZs3/kcwD9mDO7MG8bw/mkT2YC0PAHswbEpY9mHN7MA8JntAezH17MHcRn8o/JPij2M8M/Amrkgc1iwRm4KXk219GvqRy2zCzbJiBDTORA7Bh1kjh2TCLcroSuOQs2+9r/KuUh2XDbFjAyzJy4HXMl1bumzuwb+5ETsC+uWvEuPbNXVTAlaad8iZYJfp9xJ+wKnlAQSfTZNCwb+54AXe3qnyNy+1ch23nOhQFAOc6bMT4BV1pIuc6tFLusv3CuQ49yb9KeXglOBny/jS8jvmal/sq6DtXgZAYOlcBN6TtXAWNmEjyRPF3lkHLuQoA2SPtxvwi3t9kzxCZ7Ur+VcqDF8giwUXen8Y12DXBX1a+5uW+nEbO5VSkGOr+0ulcTlUwySOcy2lLcx4jlOZ56puH+LsEt4X4ATm3kAfxDcvKgyN+K+euZQFV50v615JnPyZCguvK/ezHRAVDXA0iIO+S4WcF/YCcEZodKFSdRxvxh/GMjn7ssTLuduNzJiR/DrzqfGnl/v5TSOjL/f2nCoa4GgQ8bJcMPyPeAdI8IGd0O1CoOg8X+U4hiu/A7uZEF1fMlZ4vqdwbF7dCQlvujYtbFQxxJd/AAIHgZfiZZh8M+R5AzizkQbxjWXk0Ni5uu4pzpkQlOZOMeNX5ksq9+W0sJLTl3vw2VsEQV/JN5AAM/EyzDwZk3IHmQbxjWXkk+Dl9mJfldCQZ8arzpZX7fCQk9OU+H6lgiCv5JohEm+cj18DPNPtggDQPyJmFPIh3LCsP+a5u/J4sML8Xe/rIt9DA2Y7nedX5ksq9dTYSEtpyb52NVDDElXwTBGDrbOQZ+plmHwxA7pLPLORBvGNZeeSFa94YSb/3C7pLz5dU7uf+SEhoy/3cH6lgiCv5xg3xiH6mOY8B0jwgZxbyIN6xrDyKoHpj0Xx51fmSyu1+HQsJbbndr2MVDHG1NOepYP4u0QHSPCBnFvIocd8y8ygzR654e7tu+ZLKvd0bCwltubd7Yx2yK9rujfl2b8wysDK8Kr/Y7o39+A4dLJ4HaRYM7uCGuy07D9fg3TLdeAd5rySfENm3a7Bva7s37htmVyhfUrlffLkVEtpyv/hyq8NHfCawDG9RP4/nQfodkDtUs3moMg+W0y0Tppy8JGeCW3a+pHLvnE6EhLbcO6cTHe7O6SRCnFmwDG9RP4/nQfodkDtUs3moMg+Ww4vRSjmtndPJsCRvV7F3oXxJ5d49mQoJbbl3T6ZZeLsn0wjx6mAG3rQ/JPp5PAvS74D4VbN5qSoPRnTKRLsn0zbitXZPpsOCbl+zd6F8SeVudgIhoS13sxOYYDU7AW92giHix2CGXtkPhn4ez8nnAXGrZotQRR7M0CUzbHaCbrMTuBn+NiHfhH6zE7QyvIXyzf3fzEx4+fnXKgMvP/8SKWDF3/PkqLTcrz7NVhl49WkmUsCKv+fJUWm5X3/8vcoMX3/8LVLAir/nyVFpufeO7+uIt3d8zzLo7x3fCwm/pu9Zo6DScr/58KeOwJsPf0QOWjV9zxoFlZb77fu/dQTevv8riEBN37JGQ6Xl3j96qCOwf/QgCAz3jx6smr5ljYZKy31w+FhH4ODwURgQHhw+8oPDR6um71iTQaXl9t79qyOe9+4fy8Ct6e5rCKh6+d8AP1oWMD0g9y4AAAAASUVORK5CYII="/></a></div>
+<br>
+<p id="gradienttext1" class="pointer" onMouseOver="progress.innerHTML='<font color=#47D1FF>.:Kreditos:.'"; onclick="load_cred(); return false" href="creditos.html">.●★☆★●..: JMC JuanMa™ :..●★☆★●.</p>
+
 <script>
 function int64(low, hi) {
     this.low = (low >>> 0);
@@ -1651,7 +1613,6 @@ window.ref_mem = function(p, sz)
     run_hax();
 }
 </script>
-</body>
 <script type="text/javascript">
  if(localStorage.getItem("temajmc")==null){
    localStorage.setItem("temajmc","1.jpg")
@@ -1679,4 +1640,10 @@ window.ref_mem = function(p, sz)
  	document.body.style.backgroundSize = "cover"
  }
 </script>
+ <script>
+ function load_cred(){ 
+  var url = localStorage.getItem("url");
+ window.location.href="" + url + "creditos.html";}
+</script>
+</body>
 </html>

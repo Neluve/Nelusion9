@@ -101,6 +101,23 @@ opacity: 1;
 }
     </style>
 <style>
+#textoguapo{
+ float:center;
+ margin-right:0%;
+ margin-top: 4px;
+ font-weight:bold;
+ font-size:28px;
+ z-index: -3;
+ background-image: linear-gradient(180deg,
+ rgba(0.80, 1.00, 0.4) 0%,
+ rgba(80, 229, 255,1) 50%,
+ rgba(80, 211, 255,1) 100%);
+ background-clip: text;
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
+ -webkit-text-fill-color: transparent; 
+ -moz-text-fill-color: transparent;
+}
 #clock{
  float:right;
  margin-right:1.25%;
@@ -108,7 +125,7 @@ opacity: 1;
  font-weight:bold;
  font-size:28px;
  background-image: linear-gradient(180deg,
- rgba(173, 229, 255,1) 0%,
+ rgba(0.80, 1.00, 0.4) 0%,
  rgba(80, 229, 255,1) 50%,
  rgba(80, 211, 255,1) 100%);
  background-clip: text;
@@ -124,7 +141,7 @@ opacity: 1;
  margin-top: 5px;
  font-size:28px;
  background-image: linear-gradient(180deg,
- rgba(173, 229, 255,1) 0%,
+ rgba(0.80, 1.00, 0.4) 0%,
  rgba(80, 229, 255,1) 50%,
  rgba(80, 211, 255,1) 100%);
  background-clip: text;
@@ -515,163 +532,151 @@ runScript('relocator.js');
 
 function goldhen(){
     progress.innerHTML="<font color=#ffb452>Gold<font color=#67caef>Hen  <font color=#c3f499> Kargado<font color=#00ff33>!";
-    LoadedMSG="<font color=#ffb452>Gold<font color=#67caef>Hen <font color=#2aa4b5>Kargado!";
+    LoadedMSG="<font color=#ffb452>Gold<font color=#67caef>Hen  <font color=#c3f499> Kargado<font color=#00ff33>!";
     PLfile = "goldhen.bin";
     out_jb = "AllPL";
     load_poc();
 }
 
 function load_PS4Debug(){
-    progress.innerHTML="PS4Debug <font color=#29e3b5>Kargado!"; LoadedMSG="PS4Debug <font color=#29e3b5>Kargado!";
+    progress.innerHTML="PS4Debug <font color=#29e3b5>Kargado!";
     PLfile = "ps4debug.bin";
     out_jb = "AllPL";
     load_poc();
 }
 
 function load_App2USB(){
-    progress.innerHTML="app2usb <font color=#29e3b5>Kargado!"; LoadedMSG="app2usb <font color=#29e3b5>Kargado!";
+    progress.innerHTML="app2usb <font color=#29e3b5>Kargado!";
     PLfile = "app2usb.bin";
     out_jb = "AllPL";     load_poc();
 }
 
 function load_BackupDB(){
-    progress.innerHTML="backupdb <font color=#29e3b5>Kargado!"; LoadedMSG="backupdb <font color=#29e3b5>Kargado!";
+    progress.innerHTML="backupdb <font color=#29e3b5>Kargado!";
     PLfile = "backupdb.bin";
     out_jb = "AllPL";     load_poc();
 }
 
 function load_Kopiador(){
-    progress.innerHTML="AppDumper <font color=#29e3b5>Kargado!"; LoadedMSG="AppDumper <font color=#29e3b5>Kargado!";
+    progress.innerHTML="Kopiador <font color=#29e3b5>Activado!";
     PLfile = "kopiadorPKG.bin";
     out_jb = "AllPL";     load_poc();
 }
 
 function load_KernelDumper(){
-    progress.innerHTML="kerneldumper <font color=#29e3b5>Kargado!"; LoadedMSG="kerneldumper <font color=#29e3b5>Kargado!";
+    progress.innerHTML="KernelDumper <font color=#29e3b5>Activado!";
     PLfile = "kerneldumper.bin";
     out_jb = "AllPL";     load_poc();
 }
 
 function load_ModuleDumper(){
-    progress.innerHTML="ModuleDumper <font color=#29e3b5>Kargado!"; LoadedMSG="ModuleDumper <font color=#29e3b5>Kargado!";
+    progress.innerHTML="ModuleDumper <font color=#29e3b5>Iniciado!";
     PLfile = "mdumper.bin";
     out_jb = "AllPL";     load_poc();
 }
 
 function load_RestoreDB(){
-    progress.innerHTML="RestoreDB <font color=#29e3b5>Kargado!"; LoadedMSG="RestoreDB <font color=#29e3b5>Kargado!";
+    progress.innerHTML="RestoreDB <font color=#29e3b5>Iniciado!";
     PLfile = "restoredb.bin";
     out_jb = "AllPL";     load_poc();
 }
 
-function load_DisableASLR(){
-    progress.innerHTML="DisableASLR <font color=#29e3b5>Kargado!"; LoadedMSG="DisableASLR <font color=#29e3b5>Kargado!";
-    PLfile = "disableaslr.bin";
-    out_jb = "AllPL";     load_poc();
-}
-
 function load_DisableUpdates(){
-    progress.innerHTML="DisableUpdates <font color=#29e3b5>Kargado!"; LoadedMSG="DisableUpdates <font color=#29e3b5>Kargado!";
+    progress.innerHTML="DisableUpdates <font color=#29e3b5>Kargado!";
     PLfile = "disableupdates.bin";
     out_jb = "AllPL";
     load_poc();
 }
 
 function load_EnableUpdates(){
-    progress.innerHTML="EnableUpdates <font color=#29e3b5>Kargado!"; LoadedMSG="EnableUpdates <font color=#29e3b5>Kargado!";
+    progress.innerHTML="EnableUpdates <font color=#29e3b5>Activado!";
     PLfile = "enableupdates.bin";
     out_jb = "AllPL";     load_poc();
 }
 
 function load_EnableBrowser(){
-    progress.innerHTML="EnableBrowser <font color=#29e3b5>Kargado!"; LoadedMSG="EnableBrowser <font color=#29e3b5>Kargado!";
+    progress.innerHTML="EnableBrowser <font color=#29e3b5>Kargado!";
     PLfile = "enablebrowser.bin";
-    out_jb = "AllPL";     load_poc();
-}
-
-function load_ExitIDU(){
-    progress.innerHTML="ExitIDU <font color=#29e3b5>Kargado!"; LoadedMSG="ExitIDU <font color=#29e3b5>Kargado!";
-    PLfile = "exitidu.bin";
     out_jb = "AllPL";     load_poc();
 }
   
 function load_FTP(){
-    progress.innerHTML="FTP <font color=#29e3b5>Kargado!"; LoadedMSG="FTP <font color=#29e3b5>Kargado!";
+    progress.innerHTML="FTP <font color=#29e3b5>Iniciado!";
     PLfile = "ftp.bin";
     out_jb = "AllPL";     load_poc();
 }
   
 function load_HistoryBlocker(){
-    progress.innerHTML="HistoryBlocker <font color=#29e3b5>Kargado!"; LoadedMSG="HistoryBlocker <font color=#29e3b5>Kargado!";
+    progress.innerHTML="HistoryBlocker <font color=#29e3b5>Kargado!";
     PLfile = "historyblocker.bin";
     out_jb = "AllPL";     load_poc();
 }
   
 function load_trukis(){
-    progress.innerHTML="Kopiador de Trukos <font color=#29e3b5>Kargado!"; LoadedMSG="<font color=#29e3b5>Kargado!";
+    progress.innerHTML="Instalador de Trukos <font color=#29e3b5>Activado!";
     PLfile = "trukis.bin";
     out_jb = "AllPL";     load_poc();
 }
   
 function load_Orbis(){
-    progress.innerHTML="Orbis-Toolbox <font color=#29e3b5>Kargado!"; LoadedMSG="Orbis-Toolbox <font color=#29e3b5>Kargado!";
+    progress.innerHTML="Orbis-Toolbox <font color=#29e3b5>Kargado!";
     PLfile = "Orbis-Toolbox.bin";
     out_jb = "AllPL";     load_poc();
 }
 
 function load_expul(){
-    progress.innerHTML="ModMenu <font color=#29e3b5>Kargado!"; LoadedMSG="ModMenu <font color=#29e3b5>Kargado!";
+    progress.innerHTML="ModMenu <font color=#29e3b5>Activado!";
     PLfile = "LushModz4.bin";
     out_jb = "AllPL";     load_poc();
 }
 
 function load_GTAL(){
-    progress.innerHTML="ModMenu <font color=#29e3b5>Kargado!"; LoadedMSG="Payload <font color=#29e3b5>Kargado!";
+    progress.innerHTML="ModMenu <font color=#29e3b5>Activado!";
     PLfile = "Lamance9.bin";
     out_jb = "AllPL";     load_poc();
 }
 
 function load_GTABQ3(){
-    progress.innerHTML="ModMenu <font color=#29e3b5>Kargado!"; LoadedMSG="ModMenu <font color=#29e3b5>Kargado!";
+    progress.innerHTML="ModMenu <font color=#29e3b5>Activado!";
     PLfile = "BeefQueefMod138.bin";
     out_jb = "AllPL";     load_poc();
 }
 
 function load_Wilde(){
-    progress.innerHTML="ModMenu <font color=#29e3b5>Kargado!"; LoadedMSG="ModMenu <font color=#29e3b5>Kargado!";
+    progress.innerHTML="ModMenu <font color=#29e3b5>Activado!";
     PLfile = "WildeModz138.bin";
     out_jb = "AllPL";     load_poc();
 }
 
 function load_Oysters129(){
-    progress.innerHTML="ModMenu <font color=#29e3b5>Kargado!"; LoadedMSG="ModMenu <font color=#29e3b5>Kargado!";
+    progress.innerHTML="ModMenu <font color=#29e3b5>Kargado!";
     PLfile = "Oysters129.bin";
     out_jb = "AllPL";     load_poc();
 }
 
 
 function load_ToDex(){
-    progress.innerHTML="Payload <font color=#29e3b5>Kargado!"; LoadedMSG="Payload <font color=#29e3b5>Kargado!";
+    progress.innerHTML="ToDex <font color=#29e3b5>Activado!";
     PLfile = "ToDex.bin";
     out_jb = "AllPL";     load_poc();
 }
 
 function load_WebRTE(){
-    progress.innerHTML="Kargador de Trukos <font color=#29e3b5>Activado!"; LoadedMSG="Kargador de Trukos <font color=#29e3b5>Activado!";
+    progress.innerHTML="Kargador de Trukos <font color=#29e3b5>Activado!";
     PLfile = "WebRTE.bin";
     out_jb = "AllPL";     load_poc();
 }
 
 
 function Mloader(){
-    progress.innerHTML="Payload <font color=#29e3b5>Kargado!"; LoadedMSG="Payload <font color=#29e3b5>Kargado!";
+    progress.innerHTML="MiraLoader <font color=#29e3b5>Activado!";
     PLfile = "MiraLoader.bin";
     out_jb = "MLD";
     load_poc();
 }
 
 function Bloader(){
-    progress.innerHTML="Payload <font color=#29e3b5>Kargado!"; LoadedMSG="Payload <font color=#29e3b5>Kargado!";
+    progress.innerHTML="Kargador de Binarios <font color=#29e3b5>Iniciado!";
     out_jb = "BinLD";
     LoaderPL();
 }
@@ -779,7 +784,7 @@ credito.style.display = "block";
 <h1 style="font-family: 'juma2';font-size:30px;text-align:center;text-shadow: 2px 2px 2px black#545d75;"><font color=#32d321>Grand Theft Auto 5 <font color=#a3a9ff>+ <font color=#d3582d>Red Dead <font color=#1aeadc>Redemption<font color=#d3582d> ||</h1><br>
 <button id="button-Payload" onMouseOver="progress.innerHTML='ModMenu GTAV para Actualizacion 1.38 x LushModz 9.00 '"; onmouseout="progress.innerHTML=' '" type="button" onclick="load_expul()" style='font-size:20px;text-align:center;text-shadow: 2px 2px 2px #545d75;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > GTAV LushModz </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='ModMenu GTAV para Actualizacion 1.38 x Graffix FirmWare 9.00 '"; onmouseout="progress.innerHTML=' '" type="button" onclick="load_GTABQ3()" style='font-size:20px;text-align:center;text-shadow: 2px 2px 2px #545d75;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > GTAV BQ3 </button>
-<button id="button-Payload" onMouseOver="progress.innerHTML='Red dead redemption 2 mod  menu 1.24 V1.3.4 by RF0oDxM0Dz (R1 + Kuadrado) '"; onmouseout="progress.innerHTML=' '" type="button" onclick="load_Oysters124()" style='font-size:20px;text-align:center;text-shadow: 2px 2px 2px #545d75;background:rgba(255, 255, 255, 0.25);color:red' > RDR2 V1.24 </button>
+<button id="button-Payload" onMouseOver="progress.innerHTML='Red dead redemption 2 mod  menu 1.29 V1.3.4 by RF0oDxM0Dz (R1 + Kuadrado) '"; onmouseout="progress.innerHTML=' '" type="button" onclick="load_Oysters129()" style='font-size:20px;text-align:center;text-shadow: 2px 2px 2px #545d75;background:rgba(255, 255, 255, 0.25);color:red' > RDR2 V1.24 </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='ModMenu GTAV para Actualizacion 1.38 WildeModz FirmWare 9.00 '"; onmouseout="progress.innerHTML=' '" type="button" onclick="load_Wilde()" style='font-size:20px;text-align:center;text-shadow: 2px 2px 2px #545d75;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > GTAV W138 </button>
 <button id="button-Payload" onMouseOver="progress.innerHTML='ModMenu GTAV para Actualizacion 1.38 Lamance FirmWare 9.00 '"; onmouseout="progress.innerHTML=' '" type="button" onclick="load_GTAL()" style='font-size:20px;text-align:center;text-shadow: 2px 2px 2px #545d75;background:rgba(255, 255, 255, 0.25);color:#72f7b1' > GTAV Lamance </button>
 <br><br><br><br><br><br><br><br><br>
@@ -790,7 +795,6 @@ credito.style.display = "block";
 	</div>
 </div>
 </div>
-
 	<div id="layers">
 </div>
 

@@ -1,5 +1,6 @@
 CACHE MANIFEST 
 
+ 
 index.html
 intro.html
 fusions9.html
@@ -16,7 +17,6 @@ exploit.js
 frontend.js
 ftp.bin
 typed.js
-neluve.css
 historyblocker.bin
 int64.js
 int64b.js
@@ -76,8 +76,6 @@ ropb2.js
 syscalls.js
 syscalls2.js
 ToDex.bin
-binloader.html
-binloader.js
 web.html
 webkit.js
 WebRTE.bin
